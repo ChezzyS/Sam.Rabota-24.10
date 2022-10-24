@@ -1,0 +1,21 @@
+﻿<Page x:Class="Сам_работа_24._10_.Работы.Delay"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Сам_работа_24._10_.Работы"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Delay">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Delay" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <StackPanel Grid.Row="1">
+            <TextBox Height="30" Margin="5" VerticalContentAlignment="Center" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged, ElementName=SourceTextBox, Delay=657}"/>
+            <TextBox x:Name="SourceTextBox" Height="30" Margin="5" VerticalContentAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
